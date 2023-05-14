@@ -130,5 +130,5 @@ dist
 .pnp.*
 
 # Stuff
-.node_modules
-.package-lock
+node_modules
+package-lock
