@@ -1,0 +1,18 @@
+const fs = require('fs-extra')
+fs.ensureDirSync('./kek/')
+
+fs.ensureFileSync('./kek/file')
+
+fs.ensureDirSync('./folder/')
+
+fs.moveSync('./kek/file/','./folder/file/')
+
+fs.removeSync('./folder/')
+
+fs.removeSync('./kek/')
+
+//fs.writeFileSync('./kek/file/','gfdsdfg')
+
+//fs.readFile('./kek/file', 'utf-8', function(err,content){
+//    if(err) throw error;
+//    console.log(content)}) 
