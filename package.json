@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint **/*.js --fix",
+    "prettier": "prettier **/*.js --write"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,10 @@
     "yargs": "^17.7.2"
   },
   "devDependencies": {
-    "eslint": "^8.40.0"
+    "eslint": "^8.42.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "prettier": "^2.8.8"
   }
 }
