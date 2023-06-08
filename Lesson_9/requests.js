@@ -1,10 +1,6 @@
 /* eslint-disable consistent-return */
 const { default: axios } = require('axios');
 
-const Calculator = require('./calc');
-
-
-
 async function getUsers(id) {
   try {
     const resp = await axios.get(`https://reqres.in/api/users/${id}`);
@@ -15,4 +11,4 @@ async function getUsers(id) {
   }
 }
 
-console.log(Calculator);
+module.exports = getUsers;

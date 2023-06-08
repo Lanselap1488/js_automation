@@ -3,7 +3,7 @@ const config = {
   collectCoverage: true,
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
-  reporters: ['default', 'jest-allure'],
+  reporters: ['default', ['jest-allure', { outputDir: 'reports' }]],
   runner: 'jest-runner',
   rootDir: './',
   testEnvironment: 'node',
